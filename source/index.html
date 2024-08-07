@@ -6,6 +6,10 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -43,6 +47,11 @@
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <a class="hero__link link-button" href="#">Подобрать программу</a>
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/main/hero-can@1x.png 1x, images/main/hero-can@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/main/hero-can-tablet@1x.png 1x, images/main/hero-can-tablet@2x.png 2x">
+          <img class="hero__image" src="images/main/hero-can-mobile@1x.png" srcset="images/main/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Банка функционального питания со вкусом курицы">
+        </picture>
       </div>
     </section>
     <!-- Блок Программы питания -->
@@ -113,8 +122,14 @@
         <!-- Слайдер сравнения -->
         <div class="example-slider slider">
           <div class="slider__image-box">
-            <img class="slider__image slider__image--before" src="https://placehold.co/400" width="100" height="100" alt="Жирный кот">
-            <img class="slider__image slider__image--after" src="https://placehold.co/400" width="100" height="100" alt="Худой кот">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/main/slider-fat-cat-tablet@1x.png 1x, images/main/slider-fat-cat-tablet@2x.png 2x">
+              <img class="slider__image slider__image--before" src="images/main/slider-fat-cat-mobile@1x.png" srcset="images/main/slider-fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот">
+            </picture>
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/main/slider-skinny-cat-tablet@1x.png 1x, images/main/slider-skinny-cat-tablet@1x.png@2x.png 2x">
+              <img class="slider__image slider__image--after" src="images/main/slider-skinny-cat-mobile@1x.png" srcset="images/main/slider-skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
           </div>
           <div class="slider__line">
             <input class="slider__line-input" type="range" name="range" min="0" max="100" value="50" aria-label="Сравнение изображений">
