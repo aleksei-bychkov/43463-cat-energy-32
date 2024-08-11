@@ -1,0 +1,8 @@
+.show-all__description--big {
+  @include text-style($secondary-font, 16px, 20px, $additional-color-text-light);
+  text-transform: uppercase;
+}
+
+.show-all__description--small {
+  @include text-style($primary-font, 12px, 16px, $main-color-text);
+}

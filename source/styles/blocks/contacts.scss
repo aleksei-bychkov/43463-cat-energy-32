@@ -1,0 +1,14 @@
+.contacts--catalog {
+  background-color: $secondary-link-bg;
+}
+
+.contacts__box-description {
+  @include text-style($secondary-font, 16px, 20px, $additional-color-text-light);
+  text-transform: uppercase;
+}
+
+.contacts__box-address,
+.contacts__box-city {
+  @include text-style($primary-font, 14px, 20px, $main-color-text);
+  font-style: normal;
+}

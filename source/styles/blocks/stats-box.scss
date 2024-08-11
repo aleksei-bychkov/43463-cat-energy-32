@@ -1,0 +1,12 @@
+.stats-box__description {
+  @include text-style($secondary-font, 24px, 24px, $additional-color-text);
+  text-transform: uppercase;
+}
+
+.stats-box__description--small {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: $main-color-text;
+  text-transform: none;
+}

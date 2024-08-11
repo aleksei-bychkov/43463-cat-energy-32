@@ -9,7 +9,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="manifest.json">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -17,15 +17,15 @@
   <header class="main-header">
     <div class="container">
       <!-- Логотип сайта -->
-      <a class="main-header__logo header-logo" href="index.html">
-        <img class="header-logo__image" src="https://placehold.co/400" width="100" height="100" alt="Логотип Кэт энерджи">
-        <img class="header-logo__image-name" src="https://placehold.co/400" width="100" height="100" alt="Cat Energy">
+      <a class="main-header__logo logo" href="#">
+        <img class="logo__image logo__image--icon" src="https://placehold.co/400" width="100" height="100" alt="Логотип Кэт энерджи">
+        <img class="logo__image logo__image--name" src="https://placehold.co/400" width="100" height="100" alt="Cat Energy">
       </a>
       <!-- Главное меню -->
       <nav class="main-navigation">
         <!-- Кнопка открытия меню -->
-        <button class="main-navigation__toggle" type="button" aria-label="Открыть меню навигации"></button>
-        <ul class="main-navigation__list navigation-list">
+        <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню навигации"></button>
+        <ul class="main-navigation__list navigation-list style-reset">
           <li class="navigation-list__item">
             <a class="navigation-list__link" href="index.html">Главная</a>
           </li>
@@ -48,7 +48,7 @@
     <section class="catalog-products">
       <div class="container">
         <h2 class="visually-hidden">Список карточек товаров</h2>
-        <ul class="catalog-products__list product">
+        <ul class="catalog-products__list product style-reset">
           <li class="product__item product-card">
             <a class="product__link" href="#" aria-label="Перейти на страницу товара">
               <picture>
@@ -57,7 +57,7 @@
               </picture>
               <h3 class="product__name">Cat Energy Pro 500 г</h3>
             </a>
-            <ul class="product__stats">
+            <ul class="product__stats style-reset">
               <li class="product__stats-item">
                 <span class="product__stats-name">Масса</span>
                 <span class="product__stats-value">500 г</span>
@@ -81,7 +81,7 @@
               </picture>
               <h3 class="product__name">Cat Energy Pro 1000 г</h3>
             </a>
-            <ul class="product__stats">
+            <ul class="product__stats style-reset">
               <li class="product__stats-item">
                 <span class="product__stats-name">Масса</span>
                 <span class="product__stats-value">1000 г</span>
@@ -105,7 +105,7 @@
               </picture>
               <h3 class="product__name">Cat Energy Pro 500 г</h3>
             </a>
-            <ul class="product__stats">
+            <ul class="product__stats style-reset">
               <li class="product__stats-item">
                 <span class="product__stats-name">Масса</span>
                 <span class="product__stats-value">500 г</span>
@@ -129,7 +129,7 @@
               </picture>
               <h3 class="product__name">Cat Energy Pro 1000 г</h3>
             </a>
-            <ul class="product__stats">
+            <ul class="product__stats style-reset">
               <li class="product__stats-item">
                 <span class="product__stats-name">Масса</span>
                 <span class="product__stats-value">1000 г</span>
@@ -153,7 +153,7 @@
               </picture>
               <h3 class="product__name">Cat Energy Slim 500 г</h3>
             </a>
-            <ul class="product__stats">
+            <ul class="product__stats style-reset">
               <li class="product__stats-item">
                 <span class="product__stats-name">Масса</span>
                 <span class="product__stats-value">500 г</span>
@@ -177,7 +177,7 @@
               </picture>
               <h3 class="product__name">Cat Energy Slim 1000 г</h3>
             </a>
-            <ul class="product__stats">
+            <ul class="product__stats style-reset">
               <li class="product__stats-item">
                 <span class="product__stats-name">Масса</span>
                 <span class="product__stats-value">1000 г</span>
@@ -201,7 +201,7 @@
               </picture>
               <h3 class="product__name">Cat Energy Slim 500 г</h3>
             </a>
-            <ul class="product__stats">
+            <ul class="product__stats style-reset">
               <li class="product__stats-item">
                 <span class="product__stats-name">Масса</span>
                 <span class="product__stats-value">500 г</span>
@@ -220,7 +220,7 @@
           <li class="product__item product-card show-all">
             <p class="show-all__description show-all__description--big">Показать еще 100500 товаров</p>
             <p class="show-all__description show-all__description--small">На самом деле вкусов гораздо больше!</p>
-            <a class="show-all__button link-button" href="#">Показать все</a>
+            <a class="show-all__button link-button link-button--secondary" href="#">Показать все</a>
           </li>
         </ul>
       </div>
@@ -229,7 +229,7 @@
     <section class="additional-products">
       <div class="container">
         <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list additional">
+        <ul class="additional-products__list additional style-reset">
           <li class="additional__item">
             <p class="additional__name">Сахарозаменитель</p>
             <div class="additional__description-box">
@@ -276,12 +276,13 @@
         <form class="promotion__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="promotion-email">Ваш e-mail</label>
           <input class="promotion__field" placeholder="KUKLACHEV@GMAIL.COM" type="email" id="promotion-email" name="promotion-email" required>
-          <button class="promotion__button" type="submit">Подписаться</button>
+          <button class="promotion__button link-button" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
     <!-- Блок Сотрудничества и карты -->
-    <section class="main-contacts contacts contacts--catalog">
+    <section class="contacts contacts--catalog">
+      <div class="contacts__map"></div>
       <div class="container">
         <h2 class="visually-hidden">Адрес для сотрудничества</h2>
         <div class="contacts__box">
@@ -292,7 +293,6 @@
           </address>
         </div>
       </div>
-      <div class="contacts-map"></div>
     </section>
   </main>
 
@@ -300,7 +300,7 @@
     <div class="container">
       <div class="main-footer__logo"></div>
       <div class="main-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list style-reset">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Наш Вконтакте"></a>
           </li>

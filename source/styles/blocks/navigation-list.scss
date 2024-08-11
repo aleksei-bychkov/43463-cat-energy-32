@@ -1,0 +1,5 @@
+.navigation-list__link {
+  @include text-style($secondary-font, 20px, 20px, $additional-color-text);
+  text-transform: uppercase;
+  text-decoration: none;
+}

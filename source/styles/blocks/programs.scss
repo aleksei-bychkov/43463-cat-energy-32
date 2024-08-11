@@ -1,0 +1,10 @@
+.programs__box-title {
+  @include text-style($secondary-font, 24px, 37px, $additional-color-text);
+  text-transform: uppercase;
+}
+
+.programs__box-link {
+  @include text-style($secondary-font, 16px, 16px, $additional-color-text);
+  text-transform: uppercase;
+  text-decoration: none;
+}

@@ -1,0 +1,13 @@
+.product__link {
+  text-decoration: none;
+}
+
+.product__name {
+  @include text-style($secondary-font, 16px, 20px, $product-name-color);
+  text-transform: uppercase;
+}
+
+.product__stats-name,
+.product__stats-value {
+  @include text-style($primary-font, 12px, 16px, $main-color-text);
+}

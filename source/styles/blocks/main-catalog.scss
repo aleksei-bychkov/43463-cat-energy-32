@@ -1,0 +1,3 @@
+.main-catalog__title {
+  @include text-style($secondary-font, 36px, 36px, $additional-color-text);
+}

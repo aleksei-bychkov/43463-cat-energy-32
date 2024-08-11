@@ -1,0 +1,26 @@
+.hero {
+  background-color: $basic-green;
+
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+  }
+}
+
+
+.hero__title {
+  @include text-style($secondary-font, 36px, 36px, $basic-white);
+
+  @media (min-width: 768px) { //Добавлено для теста
+    @include text-style($secondary-font, 60px, 60px, $additional-color-text);
+  }
+}
+
+.hero__description {
+  @include text-style($secondary-font, 14px, 14px, $basic-white);
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {  //Добавлено для теста
+    @include text-style($secondary-font, 20px, 20px, $additional-color-text);
+  }
+}
+

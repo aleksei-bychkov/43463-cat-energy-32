@@ -1,0 +1,24 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $font-src;
+    font-display: swap;
+  }
+}
+
+/* Обнуляет стили у списка */
+@mixin list-style-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для текста */
+@mixin text-style($font-family, $font-size, $line-height, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

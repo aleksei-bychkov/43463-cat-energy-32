@@ -1,0 +1,7 @@
+.gift-box {
+  background-color: $basic-green;
+}
+
+.gift-box__description {
+  @include text-style($primary-font, 16px, 20px, $basic-white);
+}

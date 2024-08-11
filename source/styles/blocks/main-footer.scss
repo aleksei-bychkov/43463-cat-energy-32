@@ -1,0 +1,7 @@
+.main-footer__copyright-link {
+  text-decoration: none;
+}
+
+.main-footer__copyright-text {
+  @include text-style($primary-font, 16px, 20px, $main-color-text);
+}

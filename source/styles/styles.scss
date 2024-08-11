@@ -1,7 +1,48 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+@import "./common/container.scss";
+@import "./common/style-reset.scss"; //Обнуляет стиль у списка
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+/* Header */
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/button.scss";
+@import "./blocks/navigation-list.scss";
+/* Main - Index Page */
+/* Hero - Section */
+@import "./blocks/hero.scss";
+@import "./blocks/link-button.scss"; //Переиспользуется
+/* Program - Section */
+@import "./blocks/programs.scss";
+/* How it works (Advantages) - Section */
+@import "./blocks/advantages.scss";
+@import "./blocks/section-title.scss";
+/* Example - Section */
+@import "./blocks/example.scss";
+@import "./blocks/stats-box.scss";
+@import "./blocks/slider.scss";
+/* Map - Section */
+@import "./blocks/contacts.scss";
+/* Footer */
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+/* Main - Catalog Page */
+@import "./blocks/main-catalog.scss";
+/* Catalog products - section */
+@import "./blocks/catalog-products.scss";
+@import "./blocks/product.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/show-all.scss";
+/* Additional products - section */
+@import "./blocks/additional-products.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/gift-box.scss";
+/* Promotion - section */
+@import "./blocks/promotion.scss";

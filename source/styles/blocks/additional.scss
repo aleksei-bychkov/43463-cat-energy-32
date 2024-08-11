@@ -1,0 +1,9 @@
+.additional__name {
+  @include text-style($secondary-font, 16px, 16px, $product-name-color);
+  text-transform: uppercase;
+}
+
+.additional__volume,
+.additional__price {
+  @include text-style($primary-font, 14px, 14px, $main-color-text);
+}

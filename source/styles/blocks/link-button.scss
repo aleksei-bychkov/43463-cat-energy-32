@@ -1,0 +1,11 @@
+.link-button {
+  @include text-style($secondary-font, 16px, 20px, $basic-white);
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basic-green;
+}
+
+.link-button--secondary {
+  color: $main-color-text;
+  background-color: $secondary-link-bg;
+}

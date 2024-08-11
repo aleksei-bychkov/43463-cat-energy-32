@@ -1,0 +1,16 @@
+.promotion__title {
+  @include text-style($secondary-font, 24px, 24px, $additional-color-text);
+}
+
+.promotion__description {
+  @include text-style($secondary-font, 16px, 24px, $additional-color-text);
+}
+
+.promotion__field {
+  @include text-style($secondary-font, 20px, 29.64px, $main-color-text);
+}
+
+.promotion__button {
+  font-size: 20px;
+  line-height: 26px;
+}
