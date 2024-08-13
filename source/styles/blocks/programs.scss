@@ -5,6 +5,10 @@
 
 .programs__box-link {
   @include text-style($secondary-font, 16px, 16px, $additional-color-text);
+  @include background-image(url("../../icons/stack.svg#arrow"), no-repeat, 24px 12px, 90%);
+  display: block;
+  width: 134px;
+  padding-right: 40px;
   text-transform: uppercase;
   text-decoration: none;
 }

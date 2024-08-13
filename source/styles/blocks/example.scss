@@ -2,7 +2,11 @@
   @include text-style($secondary-font, 36px, 40px, $additional-color-text);
 }
 
-.example__stats-cost-description,
+.example__stats-cost-description {
+  @include text-style($secondary-font, 14px, 20px, $additional-color-text);
+  text-transform: uppercase;
+}
+
 .example__stats-cost-price {
   @include text-style($secondary-font, 14px, 20px, $additional-color-text);
 }

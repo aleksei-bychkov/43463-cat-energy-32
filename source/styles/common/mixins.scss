@@ -22,3 +22,11 @@
   line-height: $line-height;
   color: $color;
 }
+
+/* Подключение декоративной картинки */
+@mixin background-image($image-url, $image-repeat, $image-size, $image-position) {
+  background-image: $image-url;
+  background-repeat: $image-repeat;
+  background-size: $image-size;
+  background-position: $image-position;
+}
