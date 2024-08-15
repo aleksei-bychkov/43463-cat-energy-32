@@ -1,7 +1,7 @@
 .hero {
   background-color: $basic-green;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     background-color: #ffffff;
   }
 }
@@ -10,7 +10,7 @@
 .hero__title {
   @include text-style($secondary-font, 36px, 36px, $basic-white);
 
-  @media (min-width: 768px) { //Добавлено для теста
+  @media (min-width: $tablet) { //Добавлено для теста
     @include text-style($secondary-font, 60px, 60px, $additional-color-text);
   }
 }
@@ -19,7 +19,7 @@
   @include text-style($secondary-font, 14px, 14px, $basic-white);
   text-transform: uppercase;
 
-  @media (min-width: 768px) {  //Добавлено для теста
+  @media (min-width: $tablet) {  //Добавлено для теста
     @include text-style($secondary-font, 20px, 20px, $additional-color-text);
   }
 }

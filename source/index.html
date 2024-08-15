@@ -18,8 +18,12 @@
     <div class="container">
       <!-- Логотип сайта -->
       <a class="main-header__logo logo" href="#">
-        <img class="logo__image logo__image--icon" src="https://placehold.co/400" width="100" height="100" alt="Логотип Кэт энерджи">
-        <img class="logo__image logo__image--name" src="https://placehold.co/400" width="100" height="100" alt="Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__image logo__image--icon" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
+        <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
       <!-- Главное меню -->
       <nav class="main-navigation">
@@ -61,12 +65,16 @@
         <div class="programs__box programs__box--loss">
           <h3 class="programs__box-title">Похудение</h3>
           <p class="programs__box-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__box-link" href="#">Каталог Slim</a>
+          <a class="programs__box-link" href="#">Каталог Slim
+            <div class="programs__box-link-icon"></div>
+          </a>
         </div>
         <div class="programs__box programs__box--gain">
           <h3 class="programs__box-title">Набор массы</h3>
           <p class="programs__box-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__box-link" href="#">Каталог Pro</a>
+          <a class="programs__box-link" href="#">Каталог Pro
+            <div class="programs__box-link-icon"></div>
+          </a>
         </div>
       </div>
     </section>
@@ -156,7 +164,9 @@
 
   <footer class="main-footer">
     <div class="container">
-      <div class="main-footer__logo"></div>
+      <div class="main-footer__logo">
+        <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="128" height="24" alt="Кэт Энерджи">
+      </div>
       <div class="main-footer__social social">
         <ul class="social__list style-reset">
           <li class="social__item">
@@ -173,6 +183,7 @@
       <div class="main-footer__copyright">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Copyright Html Academy">
           <span class="main-footer__copyright-text">HTML Academy</span>
+          <div class="main-footer__copyright-logo"></div>
         </a>
       </div>
     </div>

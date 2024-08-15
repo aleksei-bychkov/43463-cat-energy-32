@@ -1,7 +1,21 @@
 .gift-box {
+  padding-top: 80px;
   background-color: $basic-green;
 }
 
 .gift-box__description {
+  position: relative;
+
   @include text-style($primary-font, 16px, 20px, $basic-white);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    top: -80px;
+
+    @include background-image(url("../../icons/stack.svg#gift"), no-repeat, 78px 80px, center);
+  }
 }
+

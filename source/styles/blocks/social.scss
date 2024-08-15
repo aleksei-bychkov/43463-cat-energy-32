@@ -1,0 +1,18 @@
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+}
+
+.social__link--vk {
+  @include background-mask(url("../../icons/stack.svg#vk"), no-repeat, 27px 17px, center);
+}
+
+.social__link--youtube {
+  @include background-mask(url("../../icons/stack.svg#youtube"), no-repeat, 24px 19px, center);
+}
+
+.social__link--telegram {
+  @include background-mask(url("../../icons/stack.svg#telegram"), no-repeat, 20px 17px, center);
+}

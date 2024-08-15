@@ -6,8 +6,5 @@
 }
 
 body {
-  font-family: $primary-font;
-  color: $main-color-text;
-  font-size: 14px;
-  line-height: 18px;
+  @include text-style($primary-font, 14px, 18px, $main-color-text);
 }

@@ -1,3 +1,36 @@
+.advantages__box {
+  padding-left: 65px;
+}
+
 .advantages__title {
   @include text-style($secondary-font, 36px, 40px, $additional-color-text);
+}
+
+.advantages__box .advantages__description {
+  position: relative;
+}
+
+.advantages__box .advantages__description::before {
+  content: " ";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: -60px;
+  background-color: $basic-green;
+}
+
+.advantages__box--nutrition .advantages__description::before {
+  @include background-image(url("../../icons/stack.svg#leaf"), no-repeat, 30px 32px, center);
+}
+
+.advantages__box--powder .advantages__description::before {
+  @include background-image(url("../../icons/stack.svg#water"), no-repeat, 26px 29px, center);
+}
+
+.advantages__box--meal .advantages__description::before {
+  @include background-image(url("../../icons/stack.svg#fork-knife"), no-repeat, 25px 30px, center);
+}
+
+.advantages__box--months .advantages__description::before {
+  @include background-image(url("../../icons/stack.svg#clock"), no-repeat, 26px 31px, center);
 }

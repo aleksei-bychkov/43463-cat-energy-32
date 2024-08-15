@@ -5,3 +5,11 @@
 .main-footer__copyright-text {
   @include text-style($primary-font, 16px, 20px, $main-color-text);
 }
+
+.main-footer__copyright-logo {
+  width: 27px;
+  height: 34px;
+
+  @include background-mask(url("../../icons/stack.svg#html-academy"), no-repeat, 27px 34px, center);
+  background-color: #666666;
+}

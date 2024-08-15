@@ -22,3 +22,19 @@
   line-height: $line-height;
   color: $color;
 }
+
+/* Подключение декоративной картинки */
+@mixin background-image($image-url, $image-repeat, $image-size, $image-position) {
+  background-image: $image-url;
+  background-repeat: $image-repeat;
+  background-size: $image-size;
+  background-position: $image-position;
+}
+
+/* Декоративная графика в интерактивных элементах */
+@mixin background-mask($image-url, $image-repeat, $image-size, $image-position) {
+  mask-image: $image-url;
+  mask-repeat: $image-repeat;
+  mask-size: $image-size;
+  mask-position: $image-position;
+}
