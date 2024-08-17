@@ -1,0 +1,28 @@
+.main-navigation__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+
+  &.show {
+    display: block;
+  }
+
+  &.close {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    width: 436px;
+  }
+}
+
+.main-navigation__toggle {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}

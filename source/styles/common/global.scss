@@ -7,4 +7,10 @@
 
 body {
   @include text-style($primary-font, 14px, 18px, $main-color-text);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
 }

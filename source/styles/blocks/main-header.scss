@@ -1,0 +1,12 @@
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.main-header__navigation {
+  @media (min-width: $tablet) {
+    margin-left: auto;
+  }
+}

@@ -1,5 +1,21 @@
+.navigation-list__item {
+  width: 100%;
+  border-top: 1px solid $border-color;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    border: none;
+  }
+}
+
 .navigation-list__link {
+  display: block;
+  width: 100%;
+  padding: 22px 0 24px;
+
   @include text-style($secondary-font, 20px, 20px, $additional-color-text);
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  background-color: #ffffff;
 }

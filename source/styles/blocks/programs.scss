@@ -23,6 +23,8 @@
 }
 
 .programs__box-title {
+  position: relative;
+
   @include text-style($secondary-font, 24px, 37px, $additional-color-text);
   text-transform: uppercase;
   padding-left: 95px;

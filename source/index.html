@@ -23,12 +23,18 @@
           <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
           <img class="logo__image logo__image--icon" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
+      </a>
+      <a class="main-header__logo logo" href="#">
         <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
       </a>
       <!-- Главное меню -->
-      <nav class="main-navigation">
+      <nav class="main-header__navigation main-navigation">
         <!-- Кнопка открытия меню -->
-        <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню навигации"></button>
+        <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню навигации">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul class="main-navigation__list navigation-list style-reset">
           <li class="navigation-list__item">
             <a class="navigation-list__link navigation-list__link--current" href="index.html">Главная</a>
@@ -181,14 +187,14 @@
         </ul>
       </div>
       <div class="main-footer__copyright">
-        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Copyright Html Academy">
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт Html Academy">
           <span class="main-footer__copyright-text">HTML Academy</span>
           <div class="main-footer__copyright-logo"></div>
         </a>
       </div>
     </div>
   </footer>
-
+  <script src="scripts/nav.js"></script>
 </body>
 
 </html>
