@@ -1,3 +1,24 @@
+.programs .container {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+}
+
+.programs__box {
+  min-height: 266px;
+  background-color: $basic-grey-light;
+
+  @media (min-width: $tablet) {
+    min-height: 372px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 374px;
+  }
+}
+
 .programs__box--loss .programs__box-title {
   &::before {
     content: "";
@@ -40,6 +61,10 @@
 
   &:hover .programs__box-link-icon {
     mask-position: 0 2px;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }
 

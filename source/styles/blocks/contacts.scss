@@ -1,5 +1,25 @@
+.contacts .container {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
+.contacts__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: block;
+    width: 565px;
+    height: 199px;
+    background-color: $basic-white;
+    top: 95px;
+  }
+}
+
 .contacts--catalog {
-  background-color: $secondary-link-bg;
+  background-color: $basic-grey-light;
 }
 
 .contacts__box-description {
@@ -11,4 +31,26 @@
 .contacts__box-city {
   @include text-style($primary-font, 14px, 20px, $main-color-text);
   font-style: normal;
+}
+
+.contacts__map {
+  width: 100%;
+  min-width: 320px;
+  min-height: 362px;
+
+  @include background-image (url("/images/main/map-mobile@2x.jpg"), no-repeat, 100%, center);
+
+  @media (min-width: $tablet) {
+    min-width: 768px;
+    min-height: 400px;
+
+    @include background-image (url("/images/main/map-tablet@2x.jpg"), no-repeat, 100%, center);
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 1440px;
+    min-height: 400px;
+
+    @include background-image (url("/images/main/map-desktop@2x.jpg"), no-repeat, 100%, center);
+  }
 }

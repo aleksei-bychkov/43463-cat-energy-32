@@ -1,8 +1,13 @@
 .hero {
+  min-height: 480px;
   background-color: $basic-green;
 
   @media (min-width: $tablet) {
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 694px;
   }
 }
 

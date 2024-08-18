@@ -1,3 +1,14 @@
+.main-footer {
+  background-color: $basic-grey-light;
+}
+
+.main-footer .container {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-footer__copyright-link {
   text-decoration: none;
 }

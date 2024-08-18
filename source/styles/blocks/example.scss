@@ -1,3 +1,23 @@
+.example {
+  min-height: 659px;
+  background-color: $example-bg;
+
+  @media (min-width: $tablet) {
+    background-image: linear-gradient($basic-white 55%, $example-bg 55%);
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 598px;
+    background-image: linear-gradient($basic-white 20%, $basic-grey-light 20%);
+  }
+}
+
+.example .container {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
 .example__title {
   @include text-style($secondary-font, 36px, 40px, $additional-color-text);
 }
