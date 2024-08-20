@@ -1,1 +1,0 @@
-var o=document.querySelector(".navigation-list"),e=document.querySelector(".main-navigation__toggle");e.onclick=function(){o.classList.toggle("show"),e.classList.toggle("open")};document.addEventListener("keydown",t=>{t.key==="Escape"&&(o.classList.remove("show"),e.classList.remove("open"))});
