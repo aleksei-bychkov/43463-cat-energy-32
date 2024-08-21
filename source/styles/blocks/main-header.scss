@@ -1,8 +1,30 @@
-.main-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 65px;
+.main-header {
+  @media (min-width: $tablet) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 55px;
+  }
+
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 65px;
+
+    @media (min-width: $tablet) {
+      min-height: 50px;
+    }
+  }
+}
+
+.main-header__logo--name {
+  margin-left: -11px;
+
+  @media (min-width: $tablet) {
+    margin-left: 13px;
+  }
 }
 
 .main-header__navigation {

@@ -2,7 +2,7 @@
   display: none;
   position: absolute;
   left: 0;
-  top: 60px;
+  top: 65px;
   width: 100%;
 
   &.show {
@@ -15,9 +15,14 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
     position: static;
-    width: 436px;
+    max-width: 447px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 600px;
   }
 }
 

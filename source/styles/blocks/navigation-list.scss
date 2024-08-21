@@ -11,11 +11,51 @@
 .navigation-list__link {
   display: block;
   width: 100%;
-  padding: 22px 0 24px;
+  padding: 22px 20px 23px;
 
   @include text-style($secondary-font, 20px, 20px, $additional-color-text);
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    padding: 10px 5px 12px;
+
+    @include text-style($secondary-font, 18px, 24px, $additional-color-text);
+  }
+
+  @media (min-width: $desktop) {
+    padding: 10px 4px 12px;
+
+    @include text-style($secondary-font, 20px, 29.64px, $basic-white);
+  }
+}
+
+.navigation-list__link--current {
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    right: 5px;
+    left: 5px;
+    bottom: 2px;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media (min-width: $desktop) {
+      bottom: 3px;
+      background-color: $basic-white;
+    }
+  }
+}
+
+.navigation-list__link--catalog {
+  color: $additional-color-text-light;
+}
+
+.navigation-list__link--catalog.navigation-list__link--current::after {
+  @media (min-width: $desktop) {
+    background-color: $basic-green;
+  }
 }
