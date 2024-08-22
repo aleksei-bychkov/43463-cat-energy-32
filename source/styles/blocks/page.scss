@@ -3,8 +3,8 @@
     @media (min-width: $desktop) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/main/hero-cat@1x.jpg");
       background-repeat: no-repeat;
-      background-position: 720px 0, 720px 0;
-      background-size: 72% 694px, 72% 694px;
+      background-position: calc(50% + 520px) 0, calc(50% + 520px) 0;
+      background-size: 1041px 694px, 1041px 694px;
     }
   }
 }
