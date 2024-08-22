@@ -1,4 +1,6 @@
 .link-button {
+  display: block;
+
   @include text-style($secondary-font, 16px, 20px, $basic-white);
   text-transform: uppercase;
   text-decoration: none;
