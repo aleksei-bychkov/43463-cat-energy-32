@@ -1,8 +1,9 @@
 .hero {
-  min-height: 480px;
-
-  @include background-image(url("/images/test-1@2x.jpg"), no-repeat, contain, top);
-
+  min-height: 500px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/main/hero-background-mobile@2x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 320px 302px, 320px 302px, 100vw 302px;
 
   @media (min-width: $tablet) {
     background-color: #ffffff;
@@ -91,7 +92,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 12px 24px;
+    padding: 14px 24px;
   }
 
   &.link-button {
