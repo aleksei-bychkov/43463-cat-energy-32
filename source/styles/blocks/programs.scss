@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 20px;
 
+  @media (min-width: $tablet) {
+    gap: 30px;
+  }
+
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11,15 +15,65 @@
 }
 
 .programs__box {
-  min-height: 266px;
+  padding: 30px 20px 18px;
   background-color: $basic-grey-light;
 
   @media (min-width: $tablet) {
-    min-height: 372px;
+    padding: 77px 316px 54px 53px;
   }
 
   @media (min-width: $desktop) {
-    min-height: 374px;
+    padding: 77px 52px 54px;
+  }
+
+  &--loss {
+    @media (min-width: $tablet) {
+      @include background-image(url("../../icons/stack.svg#cat-slim"), no-repeat, 200px 211px, calc(100% - 64px) 50%);
+    }
+
+    @media (min-width: $desktop) {
+      background-image: none;
+    }
+  }
+
+  &--gain {
+    @media (min-width: $tablet) {
+      @include background-image(url("../../icons/stack.svg#cat-pro"), no-repeat, 268px 200px, calc(100% - 26px) 53%);
+    }
+
+    @media (min-width: $desktop) {
+      background-image: none;
+    }
+  }
+}
+
+.programs__box-title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include text-style($secondary-font, 24px, 37px, $additional-color-text);
+  text-transform: uppercase;
+  padding-left: 70px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin-bottom: 24px;
+
+    @include text-style($secondary-font, 36px, 36px, $additional-color-text);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+
+    &::before {
+      display: block;
+    }
   }
 }
 
@@ -29,9 +83,18 @@
     position: absolute;
     width: 50px;
     height: 53px;
-    left: 20px;
+    top: -8px;
+    left: 0;
 
     @include background-image(url("../../icons/stack.svg#cat-slim"), no-repeat, 50px 53px, center);
+
+    @media (min-width: $desktop) {
+      @include background-image(url("../../icons/stack.svg#cat-slim"), no-repeat, 100px 106px, center);
+      width: 100px;
+      height: 106px;
+      left: 0;
+      top: -35px;
+    }
   }
 }
 
@@ -41,24 +104,58 @@
     position: absolute;
     width: 67px;
     height: 50px;
-    left: 10px;
+    left: -7px;
+    top: -7px;
 
     @include background-image(url("../../icons/stack.svg#cat-pro"), no-repeat, 67px 50px, center);
+
+    @media (min-width: $desktop) {
+      @include background-image(url("../../icons/stack.svg#cat-pro"), no-repeat, 134px 100px, center);
+      width: 134px;
+      height: 100px;
+      left: -16px;
+      top: -30px;
+    }
   }
 }
 
-.programs__box-title {
+.programs__box-description {
   position: relative;
   margin: 0;
+  margin-bottom: 38px;
 
-  @include text-style($secondary-font, 24px, 37px, $additional-color-text);
-  text-transform: uppercase;
-  padding-left: 95px;
+  &::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: -23px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 48px;
+    max-width: 595px;
+
+    @include text-style($primary-font, 16px, 24px, $additional-color-text);
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 25px;
+  }
 }
 
 .programs__box-link {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 134px;
+  padding: 4px 0;
 
   @include text-style($secondary-font, 16px, 16px, $additional-color-text);
   text-transform: uppercase;
@@ -71,14 +168,24 @@
   &:active {
     opacity: 30%;
   }
+
+  @media (min-width: $tablet) {
+    width: 165px;
+
+    @include text-style($secondary-font, 20px, 29.64px, $additional-color-text);
+  }
 }
 
 .programs__box-link-icon {
   width: 32px;
-  height: 12px;
+  height: 15px;
   margin-left: 15px;
 
   @include background-mask((url("../../icons/stack.svg#big-arrow")), no-repeat, 32px 12px, -8px 2px);
   background-color: #000000;
   transition: 0.2s ease-out;
+
+  @media (min-width: $tablet) {
+    margin-left: 26px;
+  }
 }

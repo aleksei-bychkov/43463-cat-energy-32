@@ -1,18 +1,19 @@
 .hero {
-  min-height: 500px;
+  min-height: fit-content;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/main/hero-background-mobile@2x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
   background-position: top;
   background-repeat: no-repeat;
   background-size: 320px 302px, 320px 302px, 100vw 302px;
 
   @media (min-width: $tablet) {
+    min-height: 870px;
     background-color: #ffffff;
     background-image: none;
   }
 
   @media (min-width: $desktop) {
-    min-height: 694px;
     background-color: transparent;
+    min-height: 656px;
   }
 
   & .container {
@@ -24,13 +25,14 @@
     @media (min-width: $tablet) {
       display: block;
       position: relative;
-      min-height: 868px;
+      min-height: 870px;
       padding-top: 61px;
       padding-left: 120px;
     }
 
     @media (min-width: $desktop) {
       position: relative;
+      min-height: 656px;
       padding-left: 79px;
       padding-top: 106px;
     }
@@ -110,14 +112,14 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: calc(50% - 171px);
+    top: calc(50% - 174px);
     left: calc(50% - 354px);
     margin: 0;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: calc(50% - 409px);
+    top: calc(50% - 305px);
     left: calc(50% - 162px);
     margin: 0;
   }
