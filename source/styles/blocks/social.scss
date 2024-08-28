@@ -1,3 +1,21 @@
+.social {
+  padding-top: 20px;
+  padding-bottom: 19px;
+  border-top: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .social__link {
   display: block;
   width: 28px;
@@ -6,13 +24,13 @@
 }
 
 .social__link--vk {
-  @include background-mask(url("../../icons/stack.svg#vk"), no-repeat, 27px 17px, center);
+  @include background-mask(url("../../icons/vk.svg"), no-repeat, 27px 17px, center);
 }
 
 .social__link--youtube {
-  @include background-mask(url("../../icons/stack.svg#youtube"), no-repeat, 24px 19px, center);
+  @include background-mask(url("../../icons/youtube.svg"), no-repeat, 24px 19px, center);
 }
 
 .social__link--telegram {
-  @include background-mask(url("../../icons/stack.svg#telegram"), no-repeat, 20px 17px, center);
+  @include background-mask(url("../../icons/telegram.svg"), no-repeat, 20px 17px, center);
 }

@@ -28,7 +28,7 @@
 
   &--loss {
     @media (min-width: $tablet) {
-      @include background-image(url("../../icons/stack.svg#cat-slim"), no-repeat, 200px 211px, calc(100% - 64px) 50%);
+      @include background-image(url("../../icons/cat-slim.svg"), no-repeat, 200px 211px, calc(100% - 63px) 50%);
     }
 
     @media (min-width: $desktop) {
@@ -38,7 +38,7 @@
 
   &--gain {
     @media (min-width: $tablet) {
-      @include background-image(url("../../icons/stack.svg#cat-pro"), no-repeat, 268px 200px, calc(100% - 26px) 53%);
+      @include background-image(url("../../icons/cat-pro.svg"), no-repeat, 268px 200px, calc(100% - 29px) 52.2%);
     }
 
     @media (min-width: $desktop) {
@@ -83,13 +83,13 @@
     position: absolute;
     width: 50px;
     height: 53px;
-    top: -8px;
+    top: -9px;
     left: 0;
 
-    @include background-image(url("../../icons/stack.svg#cat-slim"), no-repeat, 50px 53px, center);
+    @include background-image(url("../../icons/cat-slim.svg"), no-repeat, 50px 53px, center);
 
     @media (min-width: $desktop) {
-      @include background-image(url("../../icons/stack.svg#cat-slim"), no-repeat, 100px 106px, center);
+      @include background-image(url("../../icons/cat-slim.svg"), no-repeat, 100px 106px, center);
       width: 100px;
       height: 106px;
       left: 0;
@@ -104,17 +104,17 @@
     position: absolute;
     width: 67px;
     height: 50px;
-    left: -7px;
-    top: -7px;
+    left: -8px;
+    top: -6px;
 
-    @include background-image(url("../../icons/stack.svg#cat-pro"), no-repeat, 67px 50px, center);
+    @include background-image(url("../../icons/cat-pro.svg"), no-repeat, 67px 50px, center);
 
     @media (min-width: $desktop) {
-      @include background-image(url("../../icons/stack.svg#cat-pro"), no-repeat, 134px 100px, center);
+      @include background-image(url("../../icons/cat-pro.svg"), no-repeat, 134px 100px, center);
       width: 134px;
       height: 100px;
-      left: -16px;
-      top: -30px;
+      left: -18px;
+      top: -29px;
     }
   }
 }
@@ -145,7 +145,7 @@
     }
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     margin-bottom: 25px;
   }
 }
@@ -181,7 +181,7 @@
   height: 15px;
   margin-left: 15px;
 
-  @include background-mask((url("../../icons/stack.svg#big-arrow")), no-repeat, 32px 12px, -8px 2px);
+  @include background-mask((url("../../icons/big-arrow.svg")), no-repeat, 32px 12px, -8px 2px);
   background-color: #000000;
   transition: 0.2s ease-out;
 

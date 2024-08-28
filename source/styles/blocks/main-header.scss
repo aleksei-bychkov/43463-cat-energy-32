@@ -1,12 +1,4 @@
 .main-header {
-  @media (min-width: $tablet) {
-    padding-top: 25px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-top: 54px;
-  }
-
   & .container {
     display: flex;
     justify-content: space-between;
@@ -15,6 +7,11 @@
 
     @media (min-width: $tablet) {
       min-height: 50px;
+      padding-top: 25px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 54px;
     }
   }
 }

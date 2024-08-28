@@ -1,6 +1,7 @@
 const menu = document.querySelector('.navigation-list');
 const toggleBtn = document.querySelector('.main-navigation__toggle');
 
+menu.classList.remove('no-js');
 
 toggleBtn.onclick = function() {
   menu.classList.toggle('show');

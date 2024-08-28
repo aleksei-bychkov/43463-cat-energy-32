@@ -14,11 +14,12 @@
 @import "./blocks/logo.scss";
 @import "./blocks/main-navigation.scss";
 @import "./blocks/button.scss";
+@import "./blocks/no-js.scss";  //No JS  для меню
 @import "./blocks/navigation-list.scss";
 /* Main - Index Page */
 /* Hero - Section */
 @import "./blocks/hero.scss";
-@import "./blocks/link-button.scss"; //Переиспользуется
+@import "./blocks/link-button.scss";
 /* Program - Section */
 @import "./blocks/programs.scss";
 /* How it works (Advantages) - Section */

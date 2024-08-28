@@ -3,17 +3,51 @@
 }
 
 .main-footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   @media (min-width: $tablet) {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 66px;
+    padding-bottom: 66px;
   }
 }
 
+.main-footer__logo {
+  @media (min-width: $tablet) {
+    margin-right: 32px;
+  }
+}
+
+.main-footer__logo.logo .logo__image {
+  margin: 0 auto;
+  display: block;
+}
+
 .main-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    gap: 23px;
+  }
 }
 
 .main-footer__copyright-text {
+  align-self: center;
+
   @include text-style($primary-font, 16px, 20px, $main-color-text);
 }
 
@@ -21,6 +55,6 @@
   width: 27px;
   height: 34px;
 
-  @include background-mask(url("../../icons/stack.svg#html-academy"), no-repeat, 27px 34px, center);
+  @include background-mask(url("../../icons/html-academy.svg"), no-repeat, 27px 34px, center);
   background-color: #666666;
 }

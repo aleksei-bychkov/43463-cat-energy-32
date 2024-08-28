@@ -1,1 +1,72 @@
-// Пустой блок
+.slider {
+  position: relative;
+
+  @media (min-width: $desktop) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__image-box {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__image {
+  display: block;
+
+  &--before {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  &--after {
+    position: absolute;
+    top: 0;
+    clip-path: inset(0 0 0 50%);
+  }
+}
+
+.slider__line {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  background-color: $line-color;
+
+  &::before {
+    content: " ";
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 2px solid  $line-color;
+    border-radius: 50%;
+    background-color: $basic-white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $line-color;
+
+    @include background-mask (url("../../icons/slider-arrows.svg"), no-repeat, 24px 18px, center);
+  }
+}

@@ -31,7 +31,7 @@
         </picture>
       </a>
       <!-- Главное меню -->
-      <nav class="main-header__navigation main-navigation">
+      <nav class="main-header__navigation main-navigation no-s">
         <!-- Кнопка открытия меню -->
         <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню навигации">
           <span></span>
@@ -91,30 +91,26 @@
     <section class="advantages">
       <div class="container">
         <h2 class="advantages__title">Как это работает</h2>
-        <div class="advantages__container">
+        <div class="advantages__inner-box">
           <div class="advantages__box advantages__box--nutrition">
             <p class="advantages__description">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
-            <span class="advantages__count">1</span>
           </div>
           <div class="advantages__box advantages__box--powder">
             <p class="advantages__description">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
-            <span class="advantages__count">2</span>
           </div>
           <div class="advantages__box advantages__box--meal">
             <p class="advantages__description">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
-            <span class="advantages__count">3</span>
           </div>
           <div class="advantages__box advantages__box--months">
             <p class="advantages__description">Уже через месяц наслаждайтесь
               изменениями к лучшему
               вашего питомца!</p>
-            <span class="advantages__count">4</span>
           </div>
         </div>
       </div>
@@ -126,13 +122,15 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__stats">
-            <div class="example__stats-box stats-box stats-box--weight">
-              <span class="stats-box__description stats-box__description--big">5 кг</span>
-              <span class="stats-box__description stats-box__description--small">снижение веса</span>
-            </div>
-            <div class="example__stats-box stats-box stats-box--days">
-              <span class="stats-box__description stats-box__description--big">60 дней</span>
-              <span class="stats-box__description stats-box__description--small">затрачено времени</span>
+            <div class="example__stats-inner">
+              <div class="example__stats-box stats-box stats-box--weight">
+                <span class="stats-box__description stats-box__description--big">5 кг</span>
+                <span class="stats-box__description stats-box__description--small">снижение веса</span>
+              </div>
+              <div class="example__stats-box stats-box stats-box--days">
+                <span class="stats-box__description stats-box__description--big">60 дней</span>
+                <span class="stats-box__description stats-box__description--small">затрачено времени</span>
+              </div>
             </div>
             <div class="example__stats-cost">
               <p class="example__stats-cost-description">Затраты на питание:</p>
@@ -152,10 +150,7 @@
               <img class="slider__image slider__image--after" src="images/main/slider-skinny-cat-mobile@1x.png" srcset="images/main/slider-skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот" hidden>
             </picture>
           </div>
-          <div class="slider__line">
-            <input class="slider__line-input" type="range" name="range" min="0" max="100" value="50" aria-label="Сравнение изображений">
-            <div class="slider__line-button"></div>
-          </div>
+          <div class="slider__line"></div>
         </div>
       </div>
     </section>
@@ -169,7 +164,9 @@
           </address>
         </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?ll=30.325098%2C59.939362&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.86" allowfullscreen="true"></iframe>
+      </div>
     </section>
   </main>
 
@@ -199,7 +196,8 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/nav.js"></script>
+  <script src="scripts/nav.js" defer></script>
+  <!-- <script src="scripts/slider.js" defer></script> -->
 </body>
 
 </html>
