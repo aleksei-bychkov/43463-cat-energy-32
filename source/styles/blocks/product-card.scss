@@ -1,4 +1,7 @@
 .product-card {
+  padding-top: 20px;
+  padding-bottom: 25px;
+
   @media (min-width: $tablet) {
     background-image: linear-gradient(transparent 15.85%, $basic-grey-light 15.85%);
   }

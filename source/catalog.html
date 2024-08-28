@@ -63,27 +63,33 @@
         <h2 class="visually-hidden">Список карточек товаров</h2>
         <ul class="catalog-products__list product style-reset">
           <li class="product__item product-card">
-            <a class="product__link" href="#" aria-label="Перейти на страницу товара">
-              <picture>
-                <source width="162" height="173" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-1-tablet@1x.png 1x, images/catalog/cards/product-1-tablet@2x.png 2x">
-                <img class="product__image" src="images/catalog/cards/product-1-mobile@1x.png" srcset="images/catalog/cards/product-1-mobile@2x.png 2x" width="68" height="87" alt="Cat Energy Pro со вкусом курицы 500 грамм">
-              </picture>
-              <h3 class="product__name">Cat Energy Pro 500 г</h3>
-            </a>
-            <ul class="product__stats style-reset">
-              <li class="product__stats-item">
-                <span class="product__stats-name">Масса</span>
-                <span class="product__stats-value">500 г</span>
-              </li>
-              <li class="product__stats-item">
-                <span class="product__stats-name">Вкус</span>
-                <span class="product__stats-value">Курица</span>
-              </li>
-              <li class="product__stats-item">
-                <span class="product__stats-name">Цена</span>
-                <span class="product__stats-value">700 ₽</span>
-              </li>
-            </ul>
+            <div class="product__inner">
+              <a class="product__link" href="#" aria-label="Перейти на страницу товара">
+                <picture>
+                  <source width="162" height="173" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-1-tablet@1x.png 1x, images/catalog/cards/product-1-tablet@2x.png 2x">
+                  <img class="product__image" src="images/catalog/cards/product-1-mobile@1x.png" srcset="images/catalog/cards/product-1-mobile@2x.png 2x" width="68" height="87" alt="Cat Energy Pro со вкусом курицы 500 грамм">
+                </picture>
+              </a>
+              <div class="product__textbox">
+                <a class="product__link" href="#" aria-label="Перейти на страницу товара">
+                  <h3 class="product__name">Cat Energy Pro 500 г</h3>
+                </a>
+                <ul class="product__stats style-reset">
+                  <li class="product__stats-item">
+                    <span class="product__stats-name">Масса</span>
+                    <span class="product__stats-value">500 г</span>
+                  </li>
+                  <li class="product__stats-item">
+                    <span class="product__stats-name">Вкус</span>
+                    <span class="product__stats-value">Курица</span>
+                  </li>
+                  <li class="product__stats-item">
+                    <span class="product__stats-name">Цена</span>
+                    <span class="product__stats-value">700 ₽</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <a class="product__button link-button" href="#">Заказать</a>
           </li>
           <li class="product__item product-card">
