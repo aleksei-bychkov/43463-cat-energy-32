@@ -1,8 +1,26 @@
 .product-card {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px;
+
+  @media (min-width: $desktop) {
+    max-width: 245px;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    top: 100%;
+    left: -40px;
+    background-color: $lines-light;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet) {
+    padding: 10px 37px 40px;
     background-image: linear-gradient(transparent 15.85%, $basic-grey-light 15.85%);
   }
 }

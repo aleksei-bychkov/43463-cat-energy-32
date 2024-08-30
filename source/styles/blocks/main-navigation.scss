@@ -4,6 +4,7 @@
   left: 0;
   top: 65px;
   width: 100%;
+  z-index: 4;
 
   &.show {
     display: block;
@@ -16,13 +17,13 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 26px;
     position: static;
-    max-width: 447px;
+    max-width: 600px;
   }
 
   @media (min-width: $desktop) {
-    max-width: 600px;
+    gap: 24px;
   }
 }
 

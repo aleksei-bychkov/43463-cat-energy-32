@@ -20,13 +20,14 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 10px 5px 12px;
+    padding: 13px 4px 12px;
+    background-color: transparent;
 
     @include text-style($secondary-font, 18px, 24px, $additional-color-text);
   }
 
   @media (min-width: $desktop) {
-    padding: 10px 4px 12px;
+    padding: 16px 4px 12px;
     background-color: transparent;
 
     @include text-style($secondary-font, 20px, 29.64px, $basic-white);
@@ -39,14 +40,18 @@
   &::after {
     content: " ";
     position: absolute;
-    right: 5px;
-    left: 5px;
+    right: 4px;
+    left: 4px;
     bottom: 2px;
     height: 2px;
     background-color: $basic-green;
 
     @media (max-width: $tablet) {
       height: 0;
+    }
+
+    @media (min-width: $tablet) {
+      bottom: 4px;
     }
 
     @media (min-width: $desktop) {

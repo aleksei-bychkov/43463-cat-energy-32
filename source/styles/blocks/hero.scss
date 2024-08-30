@@ -5,14 +5,14 @@
   background-size: 320px 302px, 320px 302px, 100vw 302px;
 
   @media (min-width: $tablet) {
-    min-height: 871px;
+    min-height: 875px;
     background-color: #ffffff;
     background-image: none;
   }
 
   @media (min-width: $desktop) {
     background-color: transparent;
-    min-height: 656px;
+    min-height: 663px;
   }
 
   & .container {
@@ -25,7 +25,7 @@
       display: block;
       position: relative;
       min-height: 870px;
-      padding-top: 61px;
+      padding-top: 65px;
       padding-left: 120px;
     }
 
@@ -33,7 +33,7 @@
       position: relative;
       min-height: 656px;
       padding-left: 79px;
-      padding-top: 106px;
+      padding-top: 110px;
     }
   }
 }
@@ -111,14 +111,14 @@
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: calc(50% - 174px);
+    top: 266px;
     left: calc(50% - 354px);
     margin: 0;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: calc(50% - 305px);
+    top: 31px;
     left: calc(50% - 162px);
     margin: 0;
   }

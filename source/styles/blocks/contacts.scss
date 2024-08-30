@@ -83,20 +83,19 @@
 .contacts__map {
   width: 100%;
   min-width: 320px;
-  min-height: 362px;
+  height: 362px;
 
   @include background-image (url("/images/main/map-mobile@2x.jpg"), no-repeat, 100%, center);
 
   @media (min-width: $tablet) {
     min-width: 768px;
-    min-height: 400px;
+    height: 400px;
 
     @include background-image (url("/images/main/map-tablet@2x.jpg"), no-repeat, 100%, center);
   }
 
   @media (min-width: $desktop) {
     min-width: 1440px;
-    min-height: 400px;
 
     @include background-image (url("/images/main/map-desktop@2x.jpg"), no-repeat, 100%, center);
   }

@@ -11,6 +11,8 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.json">
   <script src="scripts/index.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш&API-ключ>" defer></script>
+  <script src="scripts/map.js" defer></script>
 </head>
 
 <body class="page__body page__body--main">
@@ -146,7 +148,7 @@
               <img class="slider__image slider__image--before" src="images/main/slider-fat-cat-mobile@1x.png" srcset="images/main/slider-fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот">
             </picture>
             <picture>
-              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/main/slider-skinny-cat-tablet@1x.png 1x, images/main/slider-skinny-cat-tablet@1x.png@2x.png 2x">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/main/slider-skinny-cat-tablet@1x.png 1x, images/main/slider-skinny-cat-tablet@2x.png 2x">
               <img class="slider__image slider__image--after" src="images/main/slider-skinny-cat-mobile@1x.png" srcset="images/main/slider-skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот" hidden>
             </picture>
           </div>
@@ -164,9 +166,7 @@
           </address>
         </div>
       </div>
-      <div class="contacts__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?ll=30.325098%2C59.939362&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.86" allowfullscreen="true" loading="lazy"></iframe>
-      </div>
+      <div class="contacts__map" id="ymap"></div>
     </section>
   </main>
 

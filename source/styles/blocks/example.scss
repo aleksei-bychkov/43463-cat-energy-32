@@ -21,8 +21,9 @@
   }
 
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 436px 560px;
+    gap: 224px;
     padding-top: 23px;
     padding-bottom: 76px;
   }
