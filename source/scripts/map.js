@@ -32,4 +32,3 @@ ymaps.ready(() => {
     myMap.setCenter([59.938631, 30.323037]);
   }
 });
-

@@ -46,7 +46,7 @@
     height: 2px;
     background-color: $basic-green;
 
-    @media (max-width: $tablet) {
+    @media (max-width: 767px) {
       height: 0;
     }
 
