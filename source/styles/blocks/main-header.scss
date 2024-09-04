@@ -16,6 +16,16 @@
   }
 }
 
+.main-header__logo {
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
 .main-header__logo--name {
   margin-left: -11px;
 

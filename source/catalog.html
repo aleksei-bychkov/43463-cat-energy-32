@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.json">
   <script src="scripts/index.js" defer></script>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш&API-ключ>" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript" defer></script>
   <script src="scripts/map.js" defer></script>
 </head>
 
@@ -294,34 +294,42 @@
         <div class="additional-products__content">
           <ul class="additional-products__list additional style-reset">
             <li class="additional__item">
-              <p class="additional__name">Сахарозаменитель</p>
-              <div class="additional__description-box">
-                <span class="additional__volume">1 упаковка (100 г)</span>
-                <span class="additional__price">200 ₽</span>
+              <div class="additional__inner-textbox">
+                <p class="additional__name">Сахарозаменитель</p>
+                <div class="additional__description-box">
+                  <span class="additional__volume">1 упаковка (100 г)</span>
+                  <span class="additional__price">200 ₽</span>
+                </div>
               </div>
               <a class="additional__button link-button" href="#">Заказать</a>
             </li>
             <li class="additional__item">
-              <p class="additional__name">Питьевая вода</p>
-              <div class="additional__description-box">
-                <span class="additional__volume">5 литров</span>
-                <span class="additional__price">50 ₽</span>
+              <div class="additional__inner-textbox">
+                <p class="additional__name">Питьевая вода</p>
+                <div class="additional__description-box">
+                  <span class="additional__volume">5 литров</span>
+                  <span class="additional__price">50 ₽</span>
+                </div>
               </div>
               <a class="additional__button link-button" href="#">Заказать</a>
             </li>
             <li class="additional__item">
-              <p class="additional__name">Молоко</p>
-              <div class="additional__description-box">
-                <span class="additional__volume">1 литр</span>
-                <span class="additional__price">100 ₽</span>
+              <div class="additional__inner-textbox">
+                <p class="additional__name">Молоко</p>
+                <div class="additional__description-box">
+                  <span class="additional__volume">1 литр</span>
+                  <span class="additional__price">100 ₽</span>
+                </div>
               </div>
               <a class="additional__button link-button" href="#">Заказать</a>
             </li>
             <li class="additional__item">
-              <p class="additional__name">Витамины</p>
-              <div class="additional__description-box">
-                <span class="additional__volume">1 упаковка (30 г)</span>
-                <span class="additional__price">300 ₽</span>
+              <div class="additional__inner-textbox">
+                <p class="additional__name">Витамины</p>
+                <div class="additional__description-box">
+                  <span class="additional__volume">1 упаковка (30 г)</span>
+                  <span class="additional__price">300 ₽</span>
+                </div>
               </div>
               <a class="additional__button link-button" href="#">Заказать</a>
             </li>
@@ -361,7 +369,9 @@
   <footer class="main-footer">
     <div class="container">
       <div class="main-footer__logo logo">
-        <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="128" height="24" alt="Кэт Энерджи">
+        <a class="main-footer__logo-link" href="index.html">
+          <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="128" height="24" alt="Кэт Энерджи">
+        </a>
       </div>
       <div class="main-footer__social social">
         <ul class="social__list style-reset">
@@ -378,7 +388,7 @@
       </div>
       <div class="main-footer__copyright">
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт Html Academy">
-          <span class="main-footer__copyright-text">Html Academy</span>
+          <span class="main-footer__copyright-text">HTML Academy</span>
           <div class="main-footer__copyright-logo"></div>
         </a>
       </div>

@@ -43,6 +43,14 @@
   @media (min-width: $tablet) {
     gap: 23px;
   }
+
+  &:is(:hover, :focus-visible) > .main-footer__copyright-logo {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .main-footer__copyright-text {

@@ -6,8 +6,22 @@
   text-decoration: none;
   background-color: $basic-green;
 
+  &:hover {
+    background-color: $link-state;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $link-state;
+  }
+
   &--secondary {
     color: $main-color-text;
     background-color: $basic-grey-light;
+  }
+
+  &--secondary:is(:hover, :focus-visible, :active) {
+    color: $main-color-text;
+    background-color: $lines-light;
   }
 }

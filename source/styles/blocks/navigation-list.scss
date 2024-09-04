@@ -32,6 +32,18 @@
 
     @include text-style($secondary-font, 20px, 29.64px, $basic-white);
   }
+
+  @media (min-width: $tablet) {
+    &:is(:hover, :focus-visible) {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:is(:hover, :focus-visible) {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }
 
 .navigation-list__link--current {
@@ -63,6 +75,12 @@
 
 .navigation-list__link--catalog {
   color: $additional-color-text-light;
+
+  @media (min-width: $desktop) {
+    &:is(:hover, :focus-visible) {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
 }
 
 .navigation-list__link--catalog.navigation-list__link--current::after {

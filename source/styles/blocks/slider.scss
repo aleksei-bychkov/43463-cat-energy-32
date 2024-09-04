@@ -46,6 +46,31 @@
   transform: translateX(-50%);
   border-radius: 2px;
   background-color: $line-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-green;
+
+    &::before {
+      border-color: $basic-green;
+    }
+
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    background-color: $line-secondary-color;
+
+    &::before {
+      border-color: $line-secondary-color;
+    }
+
+    &::after {
+      background-color: $line-secondary-color;
+    }
+  }
 
   &::before {
     content: " ";

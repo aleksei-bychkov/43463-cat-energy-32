@@ -1,20 +1,70 @@
 .gift-box {
-  padding-top: 80px;
+  min-height: 290px;
+  padding: 187px 58px 43px;
   background-color: $basic-green;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/gift-background-mobile@1x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 280px 290px, 280px 290px, 100vw 290px;
+
+  @media (min-width: $tablet) {
+    min-height: 200px;
+    padding: 71px 20px 69px 422px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/gift-background-tablet@1x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+    background-size: 707px 200px, 707px 200px, 100vw 200px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    min-height: 288px;
+    padding: 185px 42px 25px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/gift-background-desktop@1x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+    background-size: 245px 288px, 245px 288px, 100vw 288px;
+  }
 }
 
 .gift-box__description {
   position: relative;
+  margin: 0;
+  text-align: center;
 
   @include text-style($primary-font, 16px, 20px, $basic-white);
+
+  @media (min-width: $tablet) {
+    max-width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: 786px) {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 161px;
+    text-align: center;
+  }
+
 
   &::before {
     content: "";
     position: absolute;
     width: 78px;
     height: 80px;
-    top: -80px;
+    top: -127px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    @include background-image(url("../../icons/stack.svg#gift"), no-repeat, 78px 80px, center);
+    @include background-image(url("../../icons/gift.svg"), no-repeat, 78px 80px, center);
+
+    @media (min-width: $tablet) {
+      top: -13px;
+      left: -304px;
+    }
+
+    @media (min-width: $desktop) {
+      top: -127px;
+      left: 82px;
+    }
   }
 }
