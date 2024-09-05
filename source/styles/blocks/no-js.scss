@@ -18,3 +18,8 @@
 .no-js > .main-header__logo {
   height: 65px;
 }
+
+.no-js > .navigation-list__item {
+  width: 100vw;
+  margin-left: -20px;
+}
