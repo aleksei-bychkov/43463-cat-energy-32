@@ -1,6 +1,7 @@
 .navigation-list__item {
   width: 100%;
   border-top: 1px solid $border-color;
+  position: relative;
 
   @media (min-width: $tablet) {
     width: auto;
@@ -37,11 +38,19 @@
     &:is(:hover, :focus-visible) {
       color: rgba(0, 0, 0, 0.6);
     }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   @media (min-width: $desktop) {
     &:is(:hover, :focus-visible) {
       color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 }
@@ -79,6 +88,10 @@
   @media (min-width: $desktop) {
     &:is(:hover, :focus-visible) {
       color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
     }
   }
 }

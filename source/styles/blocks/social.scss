@@ -16,23 +16,13 @@
   gap: 24px;
 }
 
-.social__item {
-  &:focus-within {
-    outline: 2px solid $additional-color-text;
-  }
-}
-
 .social__link {
   display: block;
   width: 28px;
   height: 22px;
   background-color: $line-color;
 
-  &:hover {
-    background-color: $basic-green;
-  }
-
-  &:focus-visible {
+  &:is(:hover, :focus-visible) {
     background-color: $basic-green;
   }
 

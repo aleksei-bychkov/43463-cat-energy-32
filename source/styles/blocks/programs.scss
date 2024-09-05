@@ -161,7 +161,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  &:hover .programs__box-link-icon {
+  &:is(:hover, :focus-visible) .programs__box-link-icon {
     mask-position: 0 2px;
   }
 

@@ -17,20 +17,20 @@
 }
 
 .main-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  @media (min-width: $tablet) {
+    gap: 13px;
+  }
+
   &:hover {
     opacity: 80%;
   }
 
   &:active {
     opacity: 60%;
-  }
-}
-
-.main-header__logo--name {
-  margin-left: -11px;
-
-  @media (min-width: $tablet) {
-    margin-left: 13px;
   }
 }
 

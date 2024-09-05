@@ -3,3 +3,18 @@
   flex-direction: column;
   position: static;
 }
+
+.no-js > .main-navigation__toggle {
+  display: none;
+}
+
+.main-header > .no-js {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+}
+
+.no-js > .main-header__logo {
+  height: 65px;
+}

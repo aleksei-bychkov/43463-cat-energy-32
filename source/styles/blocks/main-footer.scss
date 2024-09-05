@@ -30,6 +30,16 @@
   }
 }
 
+.main-footer__logo-link {
+  &:is(:hover, :focus-visible) > .logo__image {
+    fill: #3e3e3e;
+  }
+
+  &:active > .logo__image {
+    fill: #6b6b6b;
+  }
+}
+
 .main-footer__logo.logo .logo__image {
   margin: 0 auto;
   display: block;
