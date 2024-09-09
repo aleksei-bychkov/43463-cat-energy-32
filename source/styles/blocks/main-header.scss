@@ -1,19 +1,18 @@
-.main-header {
-  & .container {
+.main-header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 320px;
+  min-height: 65px;
+
+  @media (min-width: $tablet) {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 320px;
-    min-height: 65px;
+    min-height: 50px;
+    padding-top: 25px;
+  }
 
-    @media (min-width: $tablet) {
-      min-height: 50px;
-      padding-top: 25px;
-    }
-
-    @media (min-width: $desktop) {
-      padding-top: 54px;
-    }
+  @media (min-width: $desktop) {
+    padding-top: 54px;
   }
 }
 

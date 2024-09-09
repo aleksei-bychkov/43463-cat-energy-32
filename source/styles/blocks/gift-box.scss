@@ -1,8 +1,8 @@
 .gift-box {
   min-height: 290px;
   padding: 187px 58px 43px;
-  background-color: $basic-green;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/gift-background-mobile@1x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+  background-color: $additional-page;
+  background-image: linear-gradient($secondary-gradient, $secondary-gradient), url("../../images/catalog/gift-background-mobile@1x.jpg"), linear-gradient(90deg, $primary-gradient, $additional-gradient);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 280px 290px, 280px 290px, 100vw 290px;
@@ -10,7 +10,7 @@
   @media (min-width: $tablet) {
     min-height: 200px;
     padding: 71px 20px 69px 422px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/gift-background-tablet@1x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+    background-image: linear-gradient($secondary-gradient, $secondary-gradient), url("../../images/catalog/gift-background-tablet@1x.jpg"), linear-gradient(90deg, $gradient-plus 50%, $additional-gradient 50%);
     background-size: 707px 200px, 707px 200px, 100vw 200px;
   }
 
@@ -18,7 +18,7 @@
     width: 245px;
     min-height: 288px;
     padding: 185px 42px 25px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/gift-background-desktop@1x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+    background-image: linear-gradient($secondary-gradient, $secondary-gradient), url("../../images/catalog/gift-background-desktop@1x.jpg"), linear-gradient(90deg, $gradient-plus 50%, $additional-gradient 50%);
     background-size: 245px 288px, 245px 288px, 100vw 288px;
   }
 }
@@ -28,7 +28,7 @@
   margin: 0;
   text-align: center;
 
-  @include text-style($primary-font, 16px, 20px, $basic-white);
+  @include text-style($primary-font, 16px, 20px, $basic-page);
 
   @media (min-width: $tablet) {
     max-width: 161px;

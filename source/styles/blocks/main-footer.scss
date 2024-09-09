@@ -1,6 +1,6 @@
 .main-footer {
   min-width: 320px;
-  background-color: $basic-grey-light;
+  background-color: $additional-bg;
 }
 
 .main-footer .container {
@@ -56,7 +56,7 @@
   }
 
   &:is(:hover, :focus-visible) > .main-footer__copyright-logo {
-    background-color: $basic-green;
+    background-color: $additional-page;
   }
 
   &:active {

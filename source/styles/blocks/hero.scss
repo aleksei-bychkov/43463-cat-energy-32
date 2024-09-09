@@ -1,12 +1,12 @@
 .hero {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/main/hero-background-mobile@2x.jpg"), linear-gradient(90deg, #64a83b, #63a63c);
+  background-image: linear-gradient($secondary-gradient, $secondary-gradient), url("/images/main/hero-background-mobile@2x.jpg"), linear-gradient(90deg, $primary-gradient, $additional-gradient);
   background-position: top;
   background-repeat: no-repeat;
   background-size: 320px 302px, 320px 302px, 100vw 302px;
 
   @media (min-width: $tablet) {
     min-height: 875px;
-    background-color: #ffffff;
+    background-color: $basic-page;
     background-image: none;
   }
 
@@ -14,33 +14,35 @@
     background-color: transparent;
     min-height: 663px;
   }
+}
 
-  & .container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 27px;
-    padding-bottom: 20px;
+.hero > .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+  padding-bottom: 20px;
 
-    @media (min-width: $tablet) {
-      display: block;
-      position: relative;
-      min-height: 870px;
-      padding-top: 65px;
-      padding-left: 120px;
-    }
+  @media (min-width: $tablet) {
+    display: block;
+    position: relative;
+    min-height: 870px;
+    padding-top: 65px;
+    padding-left: 120px;
+  }
 
-    @media (min-width: $desktop) {
-      position: relative;
-      min-height: 656px;
-      padding-left: 79px;
-      padding-top: 110px;
-    }
+  @media (min-width: $desktop) {
+    position: relative;
+    min-height: 656px;
+    padding-left: 79px;
+    padding-top: 110px;
   }
 }
 
+
 .hero__title {
-  @include text-style($secondary-font, 36px, 36px, $basic-white);
+  @include text-style($secondary-font, 36px, 36px, $basic-page);
   text-align: center;
+  margin: 0;
   margin-bottom: 25px;
 
   @media (min-width: $tablet) {
@@ -59,7 +61,7 @@
 }
 
 .hero__description {
-  @include text-style($secondary-font, 14px, 14px, $basic-white);
+  @include text-style($secondary-font, 14px, 14px, $basic-page);
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 29px;
@@ -95,14 +97,15 @@
   @media (min-width: $desktop) {
     padding: 14px 24px;
   }
+}
 
-  &.link-button {
-    @media (min-width: $tablet) {
-      font-size: 20px;
-      line-height: 26px;
-    }
+.hero__link.link-button {
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
+
 
 .hero__image {
   display: block;

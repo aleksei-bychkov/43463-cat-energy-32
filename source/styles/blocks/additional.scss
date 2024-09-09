@@ -33,9 +33,14 @@
   }
 }
 
+.additional__link-name {
+  text-decoration: none;
+}
+
 .additional__name {
   margin: 0;
   margin-bottom: 11px;
+  font-weight: 400;
 
   @include text-style($secondary-font, 16px, 16px, $product-name-color);
   text-transform: uppercase;

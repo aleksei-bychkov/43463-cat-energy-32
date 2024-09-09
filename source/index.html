@@ -11,6 +11,8 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.json">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/slider.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;" defer></script>
   <script src="scripts/map.js" defer></script>
 </head>
@@ -59,7 +61,7 @@
       <div class="container">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <a class="hero__link link-button" href="#">Подобрать программу</a>
+        <a class="hero__link link-button" href="form.html">Подобрать программу</a>
         <picture>
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/main/hero-can@1x.png 1x, images/main/hero-can@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/main/hero-can-tablet@1x.png 1x, images/main/hero-can-tablet@2x.png 2x">
@@ -150,7 +152,9 @@
               <img class="slider__image slider__image--after" src="images/main/slider-skinny-cat-mobile@1x.png" srcset="images/main/slider-skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
             </picture>
           </div>
-          <div class="slider__line"></div>
+          <div class="slider__line">
+            <button class="slider__line-button" type="button" aria-label="Ползунок слайдера"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -198,8 +202,6 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/nav.js" defer></script>
-  <script src="scripts/slider.js" defer></script>
 </body>
 
 </html>

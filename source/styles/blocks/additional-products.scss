@@ -7,7 +7,7 @@
     top: 34px;
     width: 100%;
     height: 2px;
-    background-color: $basic-green;
+    background-color: $additional-page;
 
     @media (min-width: $tablet) {
       top: 87px;
@@ -33,7 +33,7 @@
 
 .additional-products__title {
   @include text-style($secondary-font, 24px, 24px, $additional-color-text);
-  background-color: #ffffff;
+  background-color: $basic-page;
   position: relative;
   z-index: 1;
   width: max-content;
@@ -58,7 +58,7 @@
   &::before {
     content: " ";
     position: absolute;
-    background-color: $basic-white;
+    background-color: $basic-page;
     width: 40px;
     height: 40px;
     left: -40px;

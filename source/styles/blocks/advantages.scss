@@ -83,7 +83,7 @@
   height: 60px;
   top: -2px;
   left: 0;
-  background-color: $basic-green;
+  background-color: $additional-page;
 
   @media (min-width: $tablet) {
     width: 80px;
@@ -121,7 +121,7 @@
     top: -153px;
     left: 46%;
     z-index: -1;
-    color: $basic-grey-light;
+    color: $additional-bg;
   }
 
   @media (min-width: $desktop) {

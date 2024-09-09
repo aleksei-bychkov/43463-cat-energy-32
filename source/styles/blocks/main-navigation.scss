@@ -7,14 +7,6 @@
   min-width: 320px;
   z-index: 4;
 
-  &.show {
-    display: block;
-  }
-
-  &.close {
-    display: none;
-  }
-
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +18,14 @@
   @media (min-width: $desktop) {
     gap: 24px;
   }
+}
+
+.main-navigation__list.show {
+  display: block;
+}
+
+.main-navigation__list.close {
+  display: none;
 }
 
 .main-navigation__toggle {

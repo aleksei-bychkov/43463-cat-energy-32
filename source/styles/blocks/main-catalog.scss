@@ -1,7 +1,7 @@
 .main-catalog > .container {
   padding-top: 27px;
   padding-bottom: 41px;
-  border-top: 1px solid $basic-grey;
+  border-top: 1px solid $basic-lines;
   border-bottom: 1px solid $lines-light;
 
   @media (min-width: $tablet) {
@@ -19,6 +19,7 @@
 
 .main-catalog__title {
   @include text-style($secondary-font, 36px, 36px, $additional-color-text);
+  margin: 0;
 
   @media (min-width: $tablet) {
     font-size: 60px;

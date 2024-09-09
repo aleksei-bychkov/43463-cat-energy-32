@@ -40,11 +40,11 @@
     width: max-content;
     font-size: 14px;
     line-height: 14px;
-    background-color: $basic-white;
+    background-color: $basic-page;
   }
 
   @media (min-width: $desktop) {
     padding: 0 9px;
-    background-color: $basic-grey-light;
+    background-color: $additional-bg;
   }
 }

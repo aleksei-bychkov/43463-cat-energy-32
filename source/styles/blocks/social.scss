@@ -1,8 +1,8 @@
 .social {
   padding-top: 20px;
   padding-bottom: 19px;
-  border-top: 1px solid $basic-grey;
-  border-bottom: 1px solid $basic-grey;
+  border-top: 1px solid $basic-lines;
+  border-bottom: 1px solid $basic-lines;
 
   @media (min-width: $tablet) {
     padding: 0;
@@ -23,7 +23,7 @@
   background-color: $line-color;
 
   &:is(:hover, :focus-visible) {
-    background-color: $basic-green;
+    background-color: $additional-page;
   }
 
   &:active {

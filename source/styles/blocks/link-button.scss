@@ -1,10 +1,10 @@
 .link-button {
   display: block;
 
-  @include text-style($secondary-font, 16px, 20px, $basic-white);
+  @include text-style($secondary-font, 16px, 20px, $basic-page);
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $basic-green;
+  background-color: $additional-page;
 
   &:hover {
     background-color: $link-state;
@@ -17,7 +17,7 @@
 
   &--secondary {
     color: $main-color-text;
-    background-color: $basic-grey-light;
+    background-color: $additional-bg;
   }
 
   &--secondary:is(:hover, :focus-visible, :active) {

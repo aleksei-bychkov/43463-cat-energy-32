@@ -49,41 +49,32 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $basic-green;
-
-    &::before {
-      border-color: $basic-green;
-    }
+    background-color: $additional-page;
 
     &::after {
-      background-color: $basic-green;
+      background-color: $additional-page;
     }
+  }
+
+  &:hover > .slider__line-button {
+    border-color: $additional-page;
+  }
+
+  &:focus-within,
+  &:focus-within::after {
+    background-color: $additional-page;
   }
 
   &:active {
     background-color: $line-secondary-color;
-
-    &::before {
-      border-color: $line-secondary-color;
-    }
 
     &::after {
       background-color: $line-secondary-color;
     }
   }
 
-  &::before {
-    content: " ";
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border: 2px solid  $line-color;
-    border-radius: 50%;
-    background-color: $basic-white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &:active > .slider__line-button {
+    border-color: $line-secondary-color;
   }
 
   &::after {
@@ -97,5 +88,24 @@
     background-color: $line-color;
 
     @include background-mask (url("../../icons/slider-arrows.svg"), no-repeat, 24px 18px, center);
+  }
+}
+
+.slider__line-button {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid  $line-color;
+  border-radius: 50%;
+  background-color: $basic-page;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+    border-color: $additional-page;
   }
 }

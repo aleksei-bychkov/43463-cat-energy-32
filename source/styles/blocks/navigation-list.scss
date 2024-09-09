@@ -13,7 +13,7 @@
   display: block;
   width: 100%;
   padding: 22px 20px 23px;
-  background-color: $basic-white;
+  background-color: $basic-page;
 
   @include text-style($secondary-font, 20px, 20px, $additional-color-text);
   text-transform: uppercase;
@@ -31,25 +31,25 @@
     padding: 16px 4px 12px;
     background-color: transparent;
 
-    @include text-style($secondary-font, 20px, 29.64px, $basic-white);
+    @include text-style($secondary-font, 20px, 29.64px, $basic-page);
   }
 
   @media (min-width: $tablet) {
-    &:is(:hover, :focus-visible) {
+    &:not(.navigation-list__link--current):is(:hover, :focus-visible) {
       color: rgba(0, 0, 0, 0.6);
     }
 
-    &:active {
+    &:not(.navigation-list__link--current):active {
       color: rgba(0, 0, 0, 0.3);
     }
   }
 
   @media (min-width: $desktop) {
-    &:is(:hover, :focus-visible) {
+    &:not(.navigation-list__link--current):is(:hover, :focus-visible) {
       color: rgba(255, 255, 255, 0.6);
     }
 
-    &:active {
+    &:not(.navigation-list__link--current):active {
       color: rgba(255, 255, 255, 0.3);
     }
   }
@@ -65,7 +65,7 @@
     left: 4px;
     bottom: 2px;
     height: 2px;
-    background-color: $basic-green;
+    background-color: $additional-page;
 
     @media (max-width: 767px) {
       height: 0;
@@ -77,7 +77,7 @@
 
     @media (min-width: $desktop) {
       bottom: 3px;
-      background-color: $basic-white;
+      background-color: $basic-page;
     }
   }
 }
@@ -86,11 +86,11 @@
   color: $additional-color-text-light;
 
   @media (min-width: $desktop) {
-    &:is(:hover, :focus-visible) {
+    &:not(.navigation-list__link--current):is(:hover, :focus-visible) {
       color: rgba(0, 0, 0, 0.6);
     }
 
-    &:active {
+    &:not(.navigation-list__link--current):active {
       color: rgba(0, 0, 0, 0.3);
     }
   }
@@ -98,6 +98,6 @@
 
 .navigation-list__link--catalog.navigation-list__link--current::after {
   @media (min-width: $desktop) {
-    background-color: $basic-green;
+    background-color: $additional-page;
   }
 }

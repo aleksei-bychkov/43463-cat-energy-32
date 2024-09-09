@@ -16,7 +16,7 @@
 
 .programs__box {
   padding: 30px 20px 18px;
-  background-color: $basic-grey-light;
+  background-color: $additional-bg;
 
   @media (min-width: $tablet) {
     padding: 77px 316px 54px 53px;
@@ -131,7 +131,7 @@
     width: 100%;
     height: 1px;
     bottom: -23px;
-    background-color: $basic-grey;
+    background-color: $basic-lines;
   }
 
   @media (min-width: $tablet) {
@@ -182,7 +182,7 @@
   margin-left: 15px;
 
   @include background-mask((url("../../icons/big-arrow.svg")), no-repeat, 32px 12px, -8px 2px);
-  background-color: #000000;
+  background-color: $additional-color-text;
   transition: 0.2s ease-out;
 
   @media (min-width: $tablet) {
