@@ -50,8 +50,10 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet) {
+    position: relative;
     max-width: 450px;
     margin-bottom: 40px;
+    z-index: 2;
 
     @include text-style($secondary-font, 60px, 60px, $additional-color-text);
     text-align: left;
@@ -71,8 +73,10 @@
   margin: 0 0 29px;
 
   @media (min-width: $tablet) {
+    position: relative;
     max-width: 450px;
     margin-bottom: 50px;
+    z-index: 2;
 
     @include text-style($secondary-font, 20px, 20px, $additional-color-text);
     text-align: left;
@@ -87,7 +91,7 @@
 
 .hero__link {
   order: 4;
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
 
   @media (min-width: $tablet) {

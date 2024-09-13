@@ -1,9 +1,5 @@
 .main-header > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   min-width: 320px;
-  min-height: 65px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -19,7 +15,7 @@
 .main-header__logo {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 57px;
 
   @media (min-width: $tablet) {
     gap: 13px;
@@ -32,6 +28,21 @@
   &:active {
     opacity: 60%;
   }
+}
+
+
+.main-header__toggle {
+  display: block;
+  top: -3px;
+  left: -1px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-header__toggle.no-js {
+  display: none;
 }
 
 .main-header__navigation {

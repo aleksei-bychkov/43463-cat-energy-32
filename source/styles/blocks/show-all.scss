@@ -3,6 +3,7 @@
   padding: 0;
 
   @media (min-width: $tablet) {
+    align-self: end;
     padding-top: 80px;
     background-image: none;
   }

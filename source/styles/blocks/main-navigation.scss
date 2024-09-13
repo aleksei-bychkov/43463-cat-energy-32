@@ -1,10 +1,30 @@
-.main-navigation__list {
+.main-navigation {
   display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.main-navigation.no-js {
+  width: 100vw;
+  margin-left: -20px;
+}
+
+.main-navigation.show {
+  display: block;
   position: absolute;
-  left: 0;
-  top: 65px;
   width: 100%;
-  min-width: 320px;
+  left: 0;
+}
+
+.main-navigation__list.close {
+  display: none;
+}
+
+.main-navigation__list {
+  position: relative;
+  width: 100%;
   z-index: 4;
 
   @media (min-width: $tablet) {
@@ -12,24 +32,11 @@
     flex-wrap: wrap;
     gap: 26px;
     position: static;
-    max-width: 600px;
+    max-width: 445px;
   }
 
   @media (min-width: $desktop) {
     gap: 24px;
-  }
-}
-
-.main-navigation__list.show {
-  display: block;
-}
-
-.main-navigation__list.close {
-  display: none;
-}
-
-.main-navigation__toggle {
-  @media (min-width: $tablet) {
-    display: none;
+    max-width: 485px;
   }
 }

@@ -10,6 +10,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
   <script src="scripts/nav.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;" defer></script>
@@ -18,28 +20,30 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="container no-js">
-      <!-- Логотип сайта -->
-      <a class="main-header__logo logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image logo__image--icon" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/svg/logo-name.svg" width="120" height="27" type="image/svg+xml">
-          <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
-        </picture>
-      </a>
-      <!-- Главное меню -->
-      <nav class="main-header__navigation main-navigation no-js">
+    <div class="container">
+      <div class="inner-container">
+        <!-- Логотип сайта -->
+        <a class="main-header__logo logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="logo__image logo__image--icon" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/svg/logo-name.svg" width="120" height="27" type="image/svg+xml">
+            <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
+          </picture>
+        </a>
         <!-- Кнопка открытия меню -->
-        <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню навигации">
+        <button class="main-header__toggle button no-js" type="button" aria-label="Открыть меню навигации">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <ul class="main-navigation__list navigation-list style-reset no-js">
+      </div>
+      <!-- Главное меню -->
+      <nav class="main-header__navigation main-navigation no-js">
+        <ul class="main-navigation__list navigation-list style-reset">
           <li class="navigation-list__item">
             <a class="navigation-list__link navigation-list__link--catalog" href="index.html">Главная</a>
           </li>
@@ -67,6 +71,8 @@
             <div class="product__inner">
               <a class="product__link product__link--img" href="#" aria-label="Перейти на страницу товара">
                 <picture>
+                  <source width="162" height="173" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/product-1-tablet@1x.webp 1x, images/catalog/cards/product-1-tablet@2x.webp 2x">
+                  <source width="68" height="87" type="image/webp" srcset="images/catalog/cards/product-1-mobile@1x.webp 1x, images/catalog/cards/product-1-mobile@2x.webp 2x">
                   <source width="162" height="173" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-1-tablet@1x.png 1x, images/catalog/cards/product-1-tablet@2x.png 2x">
                   <img class="product__image" src="images/catalog/cards/product-1-mobile@1x.png" srcset="images/catalog/cards/product-1-mobile@2x.png 2x" width="68" height="87" alt="Cat Energy Pro со вкусом курицы 500 грамм">
                 </picture>
@@ -97,6 +103,9 @@
             <div class="product__inner">
               <a class="product__link product__link--img" href="#" aria-label="Перейти на страницу товара">
                 <picture>
+                  <source width="169" height="196" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/cards/product-2-desktop@1x.webp 1x, images/catalog/cards/product-2-desktop@2x.webp 2x">
+                  <source width="168" height="206" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/product-2-tablet@1x.webp 1x, images/catalog/cards/product-2-tablet@2x.webp 2x">
+                  <source width="84" height="101" type="image/webp" srcset="images/catalog/cards/product-2-mobile@1x.webp 1x, images/catalog/cards/product-2-mobile@2x.webp 2x">
                   <source width="169" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/cards/product-2-desktop@1x.png 1x, images/catalog/cards/product-2-desktop@2x.png 2x">
                   <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-2-tablet@1x.png 1x, images/catalog/cards/product-2-tablet@2x.png 2x">
                   <img class="product__image" src="images/catalog/cards/product-2-mobile@1x.png" srcset="images/catalog/cards/product-2-mobile@2x.png 2x" width="84" height="101" alt="Cat Energy Pro со вкусом курицы 1000 грамм">
@@ -128,6 +137,8 @@
             <div class="product__inner">
               <a class="product__link product__link--img" href="#" aria-label="Перейти на страницу товара">
                 <picture>
+                  <source width="164" height="175" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/product-3-tablet@1x.webp 1x, images/catalog/cards/product-3-tablet@2x.webp 2x">
+                  <source width="68" height="79" type="image/webp" srcset="images/catalog/cards/product-3-mobile@1x.webp 1x, images/catalog/cards/product-3-mobile@2x.webp 2x">
                   <source width="164" height="175" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-3-tablet@1x.png 1x, images/catalog/cards/product-3-tablet@2x.png 2x">
                   <img class="product__image" src="images/catalog/cards/product-3-mobile@1x.png" srcset="images/catalog/cards/product-3-mobile@2x.png 2x" width="68" height="79" alt="Cat Energy Pro со вкусом рыбы 500 грамм">
                 </picture>
@@ -158,8 +169,11 @@
             <div class="product__inner">
               <a class="product__link product__link--img" href="#" aria-label="Перейти на страницу товара">
                 <picture>
+                  <source width="169" height="196" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/cards/product-4-desktop@1x.webp 1x, images/catalog/cards/product-4-desktop@2x.webp 2x">
+                  <source width="168" height="206" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/product-4-tablet@1x.webp 1x, images/catalog/cards/product-4-tablet@2x.webp 2x">
+                  <source width="84" height="101" type="image/webp" srcset="images/catalog/cards/product-4-mobile@1x.webp 1x, images/catalog/cards/product-4-mobile@2x.webp 2x">
                   <source width="169" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/cards/product-4-desktop@1x.png 1x, images/catalog/cards/product-4-desktop@2x.png 2x">
-                  <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-4-tablet@1x.png 1x, images/catalog/cards/product-4-tablet@2x.png 2x">
+                  <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-4-tablet@1x.png 1x, images/catalog/cards/product-4-tablet@2x.png 2x">
                   <img class="product__image" src="images/catalog/cards/product-4-mobile@1x.png" srcset="images/catalog/cards/product-4-mobile@2x.png 2x" width="84" height="101" alt="Cat Energy Pro со вкусом рыбы 1000 грамм">
                 </picture>
               </a>
@@ -189,6 +203,8 @@
             <div class="product__inner">
               <a class="product__link product__link--img" href="#" aria-label="Перейти на страницу товара">
                 <picture>
+                  <source width="162" height="172" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/product-5-tablet@1x.webp 1x, images/catalog/cards/product-5-tablet@2x.webp 2x">
+                  <source width="68" height="79" type="image/webp" srcset="images/catalog/cards/product-5-mobile@1x.webp 1x, images/catalog/cards/product-5-mobile@2x.webp 2x">
                   <source width="162" height="172" type="image/jpg" media="(min-width: 768px)" srcset="images/catalog/cards/product-5-tablet@1x.png 1x, images/catalog/cards/product-5-tablet@2x.png 2x">
                   <img class="product__image" src="images/catalog/cards/product-5-mobile@1x.png" srcset="images/catalog/cards/product-5-mobile@2x.png 2x" width="68" height="79" alt="Cat Energy Slim со вкусом гречки 500 грамм">
                 </picture>
@@ -219,8 +235,11 @@
             <div class="product__inner">
               <a class="product__link product__link--img" href="#" aria-label="Перейти на страницу товара">
                 <picture>
+                  <source width="169" height="196" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/cards/product-6-desktop@1x.webp 1x, images/catalog/cards/product-6-desktop@2x.webp 2x">
+                  <source width="168" height="206" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/product-6-tablet@1x.webp 1x, images/catalog/cards/product-6-tablet@2x.webp 2x">
+                  <source width="84" height="101" type="image/webp" srcset="images/catalog/cards/product-6-mobile@1x.webp 1x, images/catalog/cards/product-6-mobile@2x.webp 2x">
                   <source width="169" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/cards/product-6-desktop@1x.png 1x, images/catalog/cards/product-6-desktop@2x.png 2x">
-                  <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-6-tablet@1x.png 1x, images/catalog/cards/product-6-tablet@2x.png 2x">
+                  <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-6-tablet@1x.png 1x, images/catalog/cards/product-6-tablet@2x.png 2x">
                   <img class="product__image" src="images/catalog/cards/product-6-mobile@1x.png" srcset="images/catalog/cards/product-6-mobile@2x.png 2x" width="84" height="101" alt="Cat Energy Slim со вкусом гречки 1000 грамм">
                 </picture>
               </a>
@@ -250,6 +269,8 @@
             <div class="product__inner">
               <a class="product__link product__link--img" href="#" aria-label="Перейти на страницу товара">
                 <picture>
+                  <source width="164" height="175" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/cards/product-7-tablet@1x.webp 1x, images/catalog/cards/product-7-tablet@2x.webp 2x">
+                  <source width="72" height="85" type="image/webp" srcset="images/catalog/cards/product-7-mobile@1x.webp 1x, images/catalog/cards/product-7-mobile@2x.webp 2x">
                   <source width="164" height="175" type="image/png" media="(min-width: 768px)" srcset="images/catalog/cards/product-7-tablet@1x.png 1x, images/catalog/cards/product-7-tablet@2x.png 2x">
                   <img class="product__image" src="images/catalog/cards/product-7-mobile@1x.png" srcset="images/catalog/cards/product-7-mobile@2x.png 2x" width="72" height="85" alt="Cat Energy Slim со вкусом риса 1000 грамм">
                 </picture>

@@ -32,14 +32,16 @@
 }
 
 .additional-products__title {
-  @include text-style($secondary-font, 24px, 24px, $additional-color-text);
-  background-color: $basic-page;
   position: relative;
-  z-index: 1;
   width: max-content;
+  max-width: 100%;
   padding-right: 40px;
   margin: 0;
   margin-bottom: 36px;
+  background-color: $basic-page;
+  z-index: 1;
+
+  @include text-style($secondary-font, 24px, 24px, $additional-color-text);
 
   @media (min-width: $tablet) {
     max-width: 668px;

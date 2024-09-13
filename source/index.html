@@ -10,6 +10,8 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
   <script src="scripts/nav.js" defer></script>
   <script src="scripts/slider.js" defer></script>
@@ -19,28 +21,30 @@
 
 <body class="page__body page__body--main">
   <header class="main-header">
-    <div class="container no-js">
-      <!-- Логотип сайта -->
-      <a class="main-header__logo logo" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image logo__image--icon" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/svg/logo-name.svg" width="120" height="27" type="image/svg+xml">
-          <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
-        </picture>
-      </a>
-      <!-- Главное меню -->
-      <nav class="main-header__navigation main-navigation no-js">
+    <div class="container">
+      <div class="inner-container">
+        <!-- Логотип сайта -->
+        <a class="main-header__logo logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/svg/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/svg/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="logo__image logo__image--icon" src="images/svg/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/svg/logo-name.svg" width="120" height="27" type="image/svg+xml">
+            <img class="logo__image logo__image--name" src="images/svg/logo-name.svg" width="101" height="18" alt="Кэт Энерджи">
+          </picture>
+        </a>
         <!-- Кнопка открытия меню -->
-        <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню навигации">
+        <button class="main-header__toggle button no-js" type="button" aria-label="Открыть меню навигации">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <ul class="main-navigation__list navigation-list style-reset no-js">
+      </div>
+      <!-- Главное меню -->
+      <nav class="main-header__navigation main-navigation no-js">
+        <ul class="main-navigation__list navigation-list style-reset">
           <li class="navigation-list__item">
             <a class="navigation-list__link navigation-list__link--current" href="#">Главная</a>
           </li>
@@ -63,6 +67,9 @@
         <p class="hero__description">Занялся собой? Займись котом!</p>
         <a class="hero__link link-button" href="form.html">Подобрать программу</a>
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/main/hero-can@1x.webp 1x, images/main/hero-can@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/main/hero-can-tablet@1x.webp 1x, images/main/hero-can-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/main/hero-can-mobile@1x.webp 1x, images/main/hero-can-mobile@2x.webp 2x">
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/main/hero-can@1x.png 1x, images/main/hero-can@2x.png 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/main/hero-can-tablet@1x.png 1x, images/main/hero-can-tablet@2x.png 2x">
           <img class="hero__image" src="images/main/hero-can-mobile@1x.png" srcset="images/main/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Банка функционального питания со вкусом курицы">
@@ -76,14 +83,16 @@
         <div class="programs__box programs__box--loss">
           <h3 class="programs__box-title">Похудение</h3>
           <p class="programs__box-description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__box-link" href="#">Каталог Slim
+          <a class="programs__box-link" href="#">
+            <span class="programs__box-link-description">Каталог Slim</span>
             <div class="programs__box-link-icon"></div>
           </a>
         </div>
         <div class="programs__box programs__box--gain">
           <h3 class="programs__box-title">Набор массы</h3>
           <p class="programs__box-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__box-link" href="#">Каталог Pro
+          <a class="programs__box-link" href="#">
+            <span class="programs__box-link-description">Каталог Pro</span>
             <div class="programs__box-link-icon"></div>
           </a>
         </div>
@@ -144,10 +153,14 @@
         <div class="example-slider slider">
           <div class="slider__image-box">
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/main/slider-fat-cat-tablet@1x.webp 1x, images/main/slider-fat-cat-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/main/slider-fat-cat-mobile@1x.webp 1x, images/main/slider-fat-cat-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/main/slider-fat-cat-tablet@1x.png 1x, images/main/slider-fat-cat-tablet@2x.png 2x">
               <img class="slider__image slider__image--before" src="images/main/slider-fat-cat-mobile@1x.png" srcset="images/main/slider-fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот">
             </picture>
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/main/slider-skinny-cat-tablet@1x.webp 1x, images/main/slider-skinny-cat-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/main/slider-skinny-cat-mobile@1x.webp 1x, images/main/slider-skinny-cat-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/main/slider-skinny-cat-tablet@1x.png 1x, images/main/slider-skinny-cat-tablet@2x.png 2x">
               <img class="slider__image slider__image--after" src="images/main/slider-skinny-cat-mobile@1x.png" srcset="images/main/slider-skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
             </picture>

@@ -152,9 +152,8 @@
 
 .programs__box-link {
   display: flex;
-  flex-wrap: wrap;
+  gap: 15px;
   align-items: center;
-  width: 134px;
   padding: 4px 0;
 
   @include text-style($secondary-font, 16px, 16px, $additional-color-text);
@@ -170,8 +169,6 @@
   }
 
   @media (min-width: $tablet) {
-    width: 165px;
-
     @include text-style($secondary-font, 20px, 29.64px, $additional-color-text);
   }
 }
@@ -179,13 +176,13 @@
 .programs__box-link-icon {
   width: 32px;
   height: 15px;
-  margin-left: 15px;
+  flex-shrink: 0;
 
   @include background-mask((url("../../icons/big-arrow.svg")), no-repeat, 32px 12px, -8px 2px);
   background-color: $additional-color-text;
   transition: 0.2s ease-out;
 
   @media (min-width: $tablet) {
-    margin-left: 26px;
+    margin-left: 11px;
   }
 }

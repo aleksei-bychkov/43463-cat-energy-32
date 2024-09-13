@@ -1,0 +1,11 @@
+.inner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 65px;
+
+  @media (min-width: $tablet) {
+    display: block;
+    min-height: 0;
+  }
+}

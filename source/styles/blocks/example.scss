@@ -77,17 +77,21 @@
 .example__stats {
   @media (min-width: $tablet) {
     display: flex;
+    gap: 10px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
+    gap: 0;
   }
 }
 
 .example__stats-inner {
   display: flex;
+  gap: 32px;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 32px;
 
   @media (min-width: $tablet) {
@@ -96,7 +100,8 @@
   }
 
   @media (min-width: $desktop) {
-    max-width: 367px;
+    justify-content: start;
+    max-width: 436px;
     gap: 43px;
     margin-bottom: 60px;
   }

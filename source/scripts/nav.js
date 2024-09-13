@@ -1,9 +1,10 @@
-const menu = document.querySelector('.navigation-list');
-const toggleBtn = document.querySelector('.main-navigation__toggle');
+const menu = document.querySelector('.main-navigation');
+const toggleBtn = document.querySelector('.main-header__toggle');
 
 menu.classList.remove('no-js');
-document.querySelector('.container').classList.remove('no-js');
+// document.querySelector('.container').classList.remove('no-js');
 document.querySelector('.main-header__navigation').classList.remove('no-js');
+document.querySelector('.main-header__toggle').classList.remove('no-js');
 
 toggleBtn.onclick = function() {
   menu.classList.toggle('show');

@@ -13,6 +13,7 @@
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-navigation.scss";
+@import "./blocks/inner-container.scss";
 @import "./blocks/button.scss";
 @import "./blocks/no-js.scss";  //No JS  для меню
 @import "./blocks/navigation-list.scss";
@@ -25,7 +26,6 @@
 @import "./blocks/programs.scss";
 /* How it works (Advantages) - Section */
 @import "./blocks/advantages.scss";
-@import "./blocks/section-title.scss";
 /* Example - Section */
 @import "./blocks/example.scss";
 @import "./blocks/stats-box.scss";
@@ -38,7 +38,6 @@
 /* Main - Catalog Page */
 @import "./blocks/main-catalog.scss";
 /* Catalog products - section */
-@import "./blocks/catalog-products.scss";
 @import "./blocks/product.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/show-all.scss";

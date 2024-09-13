@@ -72,7 +72,7 @@
     }
 
     @media (min-width: $tablet) {
-      bottom: 4px;
+      bottom: 1px;
     }
 
     @media (min-width: $desktop) {
@@ -97,6 +97,10 @@
 }
 
 .navigation-list__link--catalog.navigation-list__link--current::after {
+  @media (min-width: $tablet) {
+    bottom: 3px;
+  }
+
   @media (min-width: $desktop) {
     background-color: $additional-page;
   }

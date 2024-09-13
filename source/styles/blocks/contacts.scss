@@ -24,12 +24,14 @@
   @media (min-width: $desktop) {
     position: absolute;
     display: flex;
+    gap: 87px;
     width: 565px;
     height: 199px;
     padding: 60px 80px;
     background-color: $basic-page;
     top: 95px;
     z-index: 1;
+    overflow: hidden;
   }
 }
 
@@ -39,6 +41,8 @@
 
 .contacts__box-description {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @include text-style($secondary-font, 16px, 20px, $additional-color-text-light);
   text-transform: uppercase;
