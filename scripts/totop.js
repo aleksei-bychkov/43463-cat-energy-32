@@ -1,0 +1,1 @@
+var o=document.querySelector(".totop");function l(){window.scrollY>500?o.style.display="block":o.style.display="none"}o.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};window.onscroll=l;
