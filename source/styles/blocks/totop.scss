@@ -1,0 +1,22 @@
+.totop {
+  position: fixed;
+  display: none;
+  right: 0;
+  bottom: 10px;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: $additional-page;
+  cursor: pointer;
+
+  @include text-style($secondary-font, 16px, 20px, $basic-page);
+
+  &:hover {
+    background-color: $link-state;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
